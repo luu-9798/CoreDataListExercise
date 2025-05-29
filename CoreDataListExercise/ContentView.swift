@@ -7,7 +7,7 @@ struct ContentView: View {
     @FetchRequest(
         sortDescriptors: [],
         animation: .default)
-    var desserts = [PlaceHolderDessert]()
+    private var desserts: FetchedResults<Dessert>
         
     var body: some View {
         NavigationView{
