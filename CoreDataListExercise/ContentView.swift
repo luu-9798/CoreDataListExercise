@@ -4,6 +4,9 @@ import CoreData
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
+    @FetchRequest(
+        sortDescriptors: [],
+        animation: .default)
     var desserts = [PlaceHolderDessert]()
         
     var body: some View {
